@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calendar</title>
+    <style>
+        /* body {
+            font-family: cursive;
+        } */
+        #calendar-container {
+            margin: auto;
+            width: 95%;
+            background-color: #e6e6e6;
+            border-radius: 1em;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            padding: 10px;
+        }
+        #calendar-body {
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #daysofweek-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .calendar-square {
+            text-align: center;
+            width: 8.5%;
+            height: 30px;
+            background-color: #f2f2f2;
+            margin: 10px;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        #calendar-month {
+            margin: 10px;
+        }
+        .todays-date {
+            background-color: red;
+        }
+    </style>
+</head>
+    <body>
+        <div id="calendar-container">
+            <h3 id="calendar-month"></h3>
+            <div id="daysofweek-container"></div>
+            <br>
+            <div style="border-top: 2px solid black; width: 90%; margin: auto;"></div>
+            <br>
+            <div id="calendar-body"></div>
+        </div>
+    </body>
+    <script src="calendar.js"></script>
+</html>
